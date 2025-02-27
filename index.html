@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>web Header using flex-box</title>
+</head>
+<body>
+
+    <div class="nav">
+
+            <div class="logo"> <h1><i class="fa-solid fa-tree"></i> Adventure</h1> 
+                
+            </div>
+
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <div class="link">
+                <ul>
+                    <li><a href="HOME">HOME</a></li>
+                    <li><a href="ABOUT">ABOUT</a></li>
+                    <li><a href="SERVICE">SERVICE</a></li>
+                    <li><a href="GALLERY">FAQ</a></li>
+                    <li><a href="CONTACT">CONTACT</a></li>
+                    <li><a href="PAGE">PAGE</a></li>
+                </ul>
+            </div>
+
+    </div>
+    
+<div class="hd">
+    <h5>DISCOVER THE COLORFUL WORLD</h5>
+    <h1>NEW ADVENTURE</h1>
+    <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, corrupti laborum vero molestiae maiores dolore. 
+    <br>Facilis laborum sequi eum, numquam, impedit non minus sit debitis officiis repellendus, ipsum inventore tenetur.</h6>
+    <button class="hd_btn">DISCOVER NOW</button>
+</div>
+
+<div class="cards-container">
+    <div class="card">
+        <img src="pic1.jpg" alt="Mountain Hiking">
+        <h3>Mountain Hiking</h3>
+        <p>Experience breathtaking views as you conquer majestic peaks. Perfect for both beginners and experienced hikers.</p>
+    </div>
+    
+    <div class="card">
+        <img src="pic2.jpg" alt="Camping">
+        <h3>Forest Camping</h3>
+        <p>Connect with nature in our serene forest campgrounds. Enjoy starlit nights and peaceful wilderness.</p>
+    </div>
+    
+    <div class="card">
+        <img src="pic3.jpg" alt="River Rafting">
+        <h3>River Rafting</h3>
+        <p>Feel the thrill of white-water rafting through spectacular canyons and rushing rivers.</p>
+    </div>
+    
+    <div class="card">
+        <img src="pic4.jpg" alt="Rock Climbing">
+        <h3>Rock Climbing</h3>
+        <p>Challenge yourself with our guided rock climbing adventures. Suitable for all skill levels.</p>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3><i class="fa-solid fa-tree"></i> Adventure</h3>
+            <p>Your trusted partner for outdoor adventures and unforgettable experiences.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4>Contact Info</h4>
+            <ul>
+                <li><i class="fas fa-phone"></i> +1 234 567 8900</li>
+                <li><i class="fas fa-envelope"></i> info@adventure.com</li>
+                <li><i class="fas fa-map-marker-alt"></i> 123 Adventure St, City</li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4>Newsletter</h4>
+            <p>Subscribe for latest updates</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Adventure. All rights reserved.</p>
+    </div>
+</footer>
+
+<script>
+    function toggleMenu() {
+        document.querySelector('.link').classList.toggle('active');
+    }
+</script>
+
+</body>
+</html>

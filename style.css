@@ -1,0 +1,269 @@
+*{padding: 0%;
+margin: 0%;
+box-sizing: border-box;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+
+
+.nav{background-color: rgb(106, 109, 109);
+width: 100%;
+height: 60px;
+padding: 0px 90px 0px 90px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+
+ul{display: flex;
+justify-content: center;
+gap: 40px;}
+
+
+li{list-style: none;}
+
+a{text-decoration: none;
+color: rgb(253, 253, 253);}
+
+.logo{color: aliceblue;}
+
+.hd{background-image: url(jpg.jpg);
+width: 100%;
+height: 80vh;
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+color: rgb(255, 255, 255);
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+gap: 10px;
+}
+
+.hd_btn{padding: 12px 18px;
+margin-top:20px;
+background-color:transparent;
+color: rgb(255, 255, 255);
+border: 2px solid white;
+border-radius: 24px;
+cursor: pointer;}
+
+.hd_btn:hover{box-shadow: black;
+background-color: rgb(231, 92, 92);
+border: 2px solid rgb(219, 74, 74);
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 50px 20px;
+    background: #f5f5f5;
+}
+
+.card {
+    width: 300px;
+    background: rgb(106, 109, 109);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h3 {
+    padding: 15px 15px 5px;
+    color: #ffffff;
+    font-size: 1.4rem;
+}
+
+.card p {
+    padding: 0 15px 20px;
+    color: #e6e6e6;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.footer {
+    background-color: rgb(106, 109, 109);
+    color: white;
+    padding: 50px 0 20px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-section h3, .footer-section h4 {
+    margin-bottom: 20px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    display: block;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: white;
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+.newsletter-form input {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.newsletter-form button {
+    padding: 10px 20px;
+    background-color: white;
+    color: rgb(106, 109, 109);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.newsletter-form button:hover {
+    background-color: #e6e6e6;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.menu-toggle {
+    display: none;  /* Hide menu toggle by default */
+}
+
+@media screen and (max-width: 768px) {
+    .nav {
+        padding: 0px 20px;
+        position: relative;
+    }
+
+    .link ul {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: rgb(106, 109, 109);
+        flex-direction: column;
+        padding: 20px 0;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .link.active ul {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;  /* Only show on mobile */
+        font-size: 24px;
+        color: white;
+        cursor: pointer;
+    }
+
+    .hd {
+        height: 60vh;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .hd h1 {
+        font-size: 2rem;
+    }
+
+    .hd h5 {
+        font-size: 1rem;
+    }
+
+    .hd h6 {
+        font-size: 0.9rem;
+        padding: 0 10px;
+    }
+
+    .cards-container {
+        padding: 30px 10px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .footer-section {
+        flex: 100%;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .social-icons {
+        justify-content: center;
+        display: flex;
+    }
+
+    .footer-section ul {
+        gap: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hd h1 {
+        font-size: 1.5rem;
+    }
+
+    .hd_btn {
+        padding: 10px 15px;
+    }
+
+    .card {
+        margin: 0 10px;
+    }
+
+    .footer-content {
+        gap: 15px;
+    }
+}
